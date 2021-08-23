@@ -1,2 +1,3 @@
 #!/bin/bash
-echo ABc | tr Ac Ze
+read word
+echo $word | tr Ac Ze
