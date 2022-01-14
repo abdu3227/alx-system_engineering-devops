@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Displays "To infinity and beyond" indefinitely with
+# a sleep 2 in between each iteration.
+# Displays "I am invincible!!!" in between each iteration.
+# Make a copy of your 6-stop_me_if_you_can script,
+# name it 67-stop_me_if_you_can, that kills the 7-highlander process 
+# instead of the 4-to_infinity_and_beyond one.
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "I am invincible"' SIGTERM
+  cp 6-stop_me_if_you_can  67-stop_me_if_you_can
+  sed -i 's/4-to_infinity_and_beyond/7-highlander/g' 67-stop_me_if_you_can
+done
+
