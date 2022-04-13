@@ -33,4 +33,3 @@ if __name__ == '__main__':
     json_file = "todo_all_employees.json"
     with open(json_file, 'w') as outfile:
         json.dump(all_user_tasks, outfile)
-
